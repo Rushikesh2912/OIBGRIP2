@@ -1,0 +1,552 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    stroke-dashoffset: 20px;
+}
+
+#mynav {
+    position: fixed;
+    width: 100%;
+    background-color: #080808;
+    transition: color 0.3s ease;
+
+}
+
+#mynav a:hover {
+    color: #08d665;
+}
+
+#myul {
+    color: #fff;
+    font-size: 21px;
+    font-variant: small-caps;
+    letter-spacing: 2.1px;
+}
+
+#myname {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+    position: relative;
+    right: 190px;
+    font-family: 'ubantu', sans-serif;
+}
+
+#lio {
+    color: #08d665;
+}
+
+/* home-section-style */
+
+#home {
+    max-width: 1536px;
+    height: 100vh;
+    background-image: url("image/banner.jpg");
+    background-repeat: no-repeat;
+}
+
+.text-1 {
+    color: aliceblue;
+    margin-left: 118px;
+    margin-right: 7px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+}
+
+.text-2 {
+    color: aliceblue;
+    margin-left: 118px;
+    margin-right: 7px;
+    font-family: 'Poppins', sans-serif, ;
+    font-size: 60px;
+
+}
+
+.text-3 {
+    color: aliceblue;
+    margin-left: 118px;
+    margin-right: 7px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+}
+
+.home-name {
+    padding-top: 258px;
+    animation-duration: 1000ms;
+    animation-fill-mode: both;
+}
+
+.home-name:hover {
+    animation: both;
+    animation-direction: alternate;
+}
+
+#ani-name {
+    color: rgb(251, 251, 251);
+    animation-name: ani-name;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    font-size: 45px;
+}
+
+
+@keyframes ani-name {
+    0% {
+        color: rgb(255, 255, 255);
+    }
+
+    25% {
+        color: rgb(210, 220, 20);
+    }
+
+    35% {
+        color: #08d665;
+    }
+
+    50% {
+        color: rgb(220, 123, 20);
+    }
+
+    75% {
+        color: rgb(220, 20, 20);
+    }
+
+    100% {
+        color: rgb(20, 37, 220);
+    }
+}
+
+#btn {
+    background-color: #08d665;
+    width: 131px;
+    height: 44px;
+    margin-left: 118px;
+    margin-top: 2px;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#btn1 {
+    background-color: #08d665;
+    width: 250px;
+    height: 50px;
+    margin-left: 118px;
+    margin-top: 2px;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+/* About section */
+
+#col {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    top: -30px;
+    color: aliceblue;
+}
+
+#h5-underline {
+    font-size: large;
+    font-weight: bold;
+    position: relative;
+    bottom: 36px;
+}
+
+#span-underline {
+    color: #08d665;
+}
+
+#img {
+    height: 520px;
+    width: 400px;
+}
+
+#row {
+    margin-top: -112px;
+}
+
+.row {
+    padding-top: 110px;
+    position: relative;
+    top: -9px;
+}
+
+#aniname {
+    color: #08d665;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+#col-name {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: start;
+    text-align-last: start;
+}
+
+#img {
+    height: 329px;
+    width: 302px;
+    transform-origin: 50% 65%;
+    transition: transform 3s, filter 1s ease-in-out;
+    filter: brightness(150%);
+
+}
+
+#img:hover {
+    box-shadow: 0 0rem 9rem rgb(49, 48, 48)k;
+    transition: 2s;
+    filter: brightness(100%);
+    transform: scale(1.1);
+}
+
+#cv-btn-read {
+    background-color: #08d665;
+    color: #fff;
+}
+
+#cv-btn-load {
+    background-color: #08d665;
+    color: #fff;
+}
+
+/* #col-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fx));
+    gap: 10px;
+    display: inline;
+} */
+
+/* Services styling */
+
+.serv-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 26vh;
+    gap: 15px;
+    position: relative;
+    bottom: 110px;
+
+}
+
+.services {
+    background-color: #080808;
+    background-repeat: no-repeat;
+}
+
+
+.text {
+    text-align: center;
+    position: relative;
+    top: 20px;
+    font-weight: bold;
+    font-size: 24px;
+    font-style: italic;
+    color: #2f4;
+}
+
+.ser-p {
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+
+.card .box {
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.card .box:hover {
+    box-shadow: 0 0rem 9rem #08d665;
+    transition: 0.2s;
+}
+
+/* styling Skills */
+#skills {
+    background-image: url(image/Head.jpg);
+    background-repeat: no-repeat;
+    height: 700px;
+}
+
+#skill-row {
+    padding-left: 26px;
+}
+
+.Pskill {
+    color: antiquewhite;
+}
+
+/* stying Team */
+
+#team {
+    background-color: #111;
+    color: #fff;
+
+
+}
+
+#team-img {
+    border-radius: 150px;
+    width: 224px;
+    position: relative;
+    left: 32px;
+    top: 11px;
+}
+
+#team-ani {
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+#team-ani:hover {
+    box-shadow: 0 2rem 1rem #08d665;
+    transition: 0.2s;
+}
+
+#team-card-name {
+    font-size: 27px;
+    position: relative;
+    top: 10px;
+}
+
+/* styling certification */
+
+#certi-card {
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+#certi-card:hover {
+    box-shadow: 0 0rem 9rem #08d665;
+    transition: 0.2s;
+}
+
+#card-bgcol {
+    background-color: #3b3a3a;
+    color: aliceblue;
+}
+
+#h5-underline {
+    margin-bottom: 62px;
+}
+
+@media only screen and (min-width:200px) and (max-width:576px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    #h5-underline {
+        position: relative;
+        bottom: 70px;
+    }
+
+    #col-row {
+        width: 100%;
+    }
+
+    .Pskill {
+        width: 250%;
+    }
+
+    #container {
+        position: relative;
+        top: 101%;
+        right: 271px;
+    }
+
+    #langC {
+        position: relative;
+        left: -121px;
+    }
+
+    #Lang-per {
+        position: absolute;
+        left: 555px;
+    }
+
+    #Lang1-per {
+        position: absolute;
+        left: 273px;
+    }
+
+    #Lang-name {
+        position: absolute;
+        left: 2px;
+    }
+
+    #Lang1-name {
+        position: relative;
+        left: 281px;
+    }
+
+    #Langboot {
+        position: relative;
+        left: 24px;
+    }
+
+    #myprogess {
+        width: 369px;
+        position: absolute;
+        left: 52px;
+    }
+
+    #img {
+        position: absolute;
+        right: 115px;
+        bottom: 250px;
+    }
+
+    #about-para {
+        position: relative;
+        bottom: 78px;
+    }
+
+    #cv-btn-read {
+        position: relative;
+        bottom: 100px;
+    }
+
+    #abouttext {
+        position: relative;
+        top: 369px;
+        left: -40px;
+        width: 400px;
+    }
+
+    #services {
+        position: absolute;
+        top: 270%;
+    }
+
+    #skills {
+        position: absolute;
+        top: 410%;
+        left: -15px;
+    }
+
+    #col {
+        position: relative;
+        top: 0px;
+    }
+
+    .skill-h5-underline {
+        position: relative;
+        top: 150px;
+    }
+
+    .cv-btn-read {
+        position: relative;
+        bottom: 300px;
+    }
+
+    .Pskill {
+        position: relative;
+        right: 50px;
+        top: 25px;
+    }
+
+    .col-skill {
+        position: relative;
+        top: 200px;
+    }
+
+    .text-2 {
+        position: relative;
+        right: -19px;
+        font-size: 54px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .text-1 {
+        position: relative;
+        right: -12px;
+    }
+
+    .text-3 {
+        position: relative;
+        right: -37px;
+        top: -15px;
+
+    }
+
+    #ani-name {
+        position: relative;
+        top: -12px;
+        left: -88px;
+        margin: 0;
+        padding: 0;
+        font-size: 72px;
+    }
+
+    #btn {
+        margin: 0;
+        position: relative;
+        left: 168px;
+    }
+
+    #btn1 {
+        margin: 0;
+        position: relative;
+        left: 168px;
+    }
+
+
+    /* team */
+
+    #team {
+        position: relative;
+        top: 2248px;
+    }
+
+    .row {
+        position: relative;
+        left: 63px;
+        gap: 65px;
+        margin-right: 130px;
+    }
+
+}
+
+.about-bg-img {
+    background-image: url(image/Header.png);
+    background-repeat: no-repeat;
+}
+
+ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+ul li a::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #08d665;
+    position: absolute;
+    left: 10px;
+    bottom: 0px;
+    transition: 0.5s;
+}
+
+ul li a:hover::after {
+    width: 80%
+}

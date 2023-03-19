@@ -1,0 +1,1296 @@
+<!doctype html>
+<html lang="eng">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-WJUUqfoMmnfkBLne5uxXj+na/c7sesSJ32gI7GfCk4zO4GthUKhSEGyvQ839BC51" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+
+    <title>Portfolio</title>
+    <style>
+        /* body{
+            background-color: #080808;
+        } */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            stroke-dashoffset: 20px;
+        }
+
+        #mynav {
+            position: fixed;
+            width: 100%;
+            background-color: #080808;
+            transition: color 0.3s ease;
+
+        }
+
+        #mynav a:hover {
+            color: #08d665;
+        }
+
+        #myul {
+            color: #fff;
+            font-size: 21px;
+            font-variant: small-caps;
+            letter-spacing: 2.1px;
+        }
+
+        #myname {
+            color: #fff;
+            font-size: 35px;
+            font-weight: 600;
+            position: relative;
+            right: 190px;
+            font-family: 'ubantu', sans-serif;
+        }
+
+        #lio {
+            color: #08d665;
+        }
+
+        /* home-section-style */
+
+        #home {
+            max-width: 1536px;
+            height: 100vh;
+            background-image: url("image/banner.jpg");
+            background-repeat: no-repeat;
+        }
+
+        .text-1 {
+            color: aliceblue;
+            margin-left: 118px;
+            margin-right: 7px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 25px;
+        }
+
+        .text-2 {
+            color: aliceblue;
+            margin-left: 118px;
+            margin-right: 7px;
+            font-family: 'Poppins', sans-serif, ;
+            font-size: 60px;
+
+        }
+
+        .text-3 {
+            color: aliceblue;
+            margin-left: 118px;
+            margin-right: 7px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 32px;
+        }
+
+        .home-name {
+            padding-top: 258px;
+            animation-duration: 1000ms;
+            animation-fill-mode: both;
+        }
+
+        .home-name:hover {
+            animation: both;
+            animation-direction: alternate;
+        }
+
+        #ani-name {
+            color: rgb(251, 251, 251);
+            animation-name: ani-name;
+            animation-duration: 2s;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            font-size: 45px;
+        }
+
+
+        @keyframes ani-name {
+            0% {
+                color: rgb(255, 255, 255);
+            }
+
+            25% {
+                color: rgb(210, 220, 20);
+            }
+
+            35% {
+                color: #08d665;
+            }
+
+            50% {
+                color: rgb(220, 123, 20);
+            }
+
+            75% {
+                color: rgb(220, 20, 20);
+            }
+
+            100% {
+                color: rgb(20, 37, 220);
+            }
+        }
+
+        #btn {
+            background-color: #08d665;
+            width: 131px;
+            height: 44px;
+            margin-left: 118px;
+            margin-top: 2px;
+            font-size: 25px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        #btn1 {
+            background-color: #08d665;
+            width: 250px;
+            height: 50px;
+            margin-left: 118px;
+            margin-top: 2px;
+            font-size: 25px;
+            text-align: center;
+            font-weight: bold;
+            border-radius: 20px;
+        }
+
+        /* About section */
+
+        #col {
+            font-size: 40px;
+            font-weight: bold;
+            font-family: 'Poppins', sans-serif;
+            position: relative;
+            top: -30px;
+            color: aliceblue;
+        }
+
+        #h5-underline {
+            font-size: large;
+            font-weight: bold;
+            position: relative;
+            bottom: 36px;
+        }
+
+        #span-underline {
+            color: #08d665;
+        }
+
+        #img {
+            height: 520px;
+            width: 400px;
+        }
+
+        #row {
+            margin-top: -112px;
+        }
+
+        .row {
+            padding-top: 110px;
+            position: relative;
+            top: -9px;
+        }
+
+        #aniname {
+            color: #08d665;
+            font-weight: bold;
+            font-size: 20px;
+
+        }
+
+        #col-name {
+            font-weight: bold;
+            font-size: 20px;
+            text-align: start;
+            text-align-last: start;
+        }
+
+        #img {
+            height: 329px;
+            width: 302px;
+            transform-origin: 50% 65%;
+            transition: transform 3s, filter 1s ease-in-out;
+            filter: brightness(150%);
+
+        }
+
+        #img:hover {
+            box-shadow: 0 0rem 9rem rgb(49, 48, 48)k;
+            transition: 2s;
+            filter: brightness(100%);
+            transform: scale(1.1);
+        }
+
+        #cv-btn-read {
+            background-color: #08d665;
+            color: #fff;
+        }
+
+        #cv-btn-load {
+            background-color: #08d665;
+            color: #fff;
+        }
+
+        /* #col-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fx));
+            gap: 10px;
+            display: inline;
+        } */
+
+        /* Services styling */
+
+        .serv-content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-around;
+            padding-top: 26vh;
+            gap: 15px;
+            position: relative;
+            bottom: 110px;
+
+        }
+
+        .services {
+            background-color: #080808;
+            background-repeat: no-repeat;
+        }
+
+
+        .text {
+            text-align: center;
+            position: relative;
+            top: 20px;
+            font-weight: bold;
+            font-size: 24px;
+            font-style: italic;
+            color: #2f4;
+        }
+
+        .ser-p {
+            text-align: center;
+            position: relative;
+            top: 20px;
+        }
+
+        .card .box {
+            cursor: pointer;
+            transition: all 0.4s ease;
+        }
+
+        .card .box:hover {
+            box-shadow: 0 0rem 9rem #08d665;
+            transition: 0.2s;
+        }
+
+        /* styling Skills */
+        #skills {
+            background-image: url(image/Head.jpg);
+            background-repeat: no-repeat;
+            height: 700px;
+        }
+
+        #skill-row {
+            padding-left: 26px;
+        }
+
+        .Pskill {
+            color: antiquewhite;
+        }
+
+        /* stying Team */
+
+        #team {
+            background-color: #111;
+            color: #fff;
+
+
+        }
+
+        #team-img {
+            border-radius: 150px;
+            width: 224px;
+            position: relative;
+            left: 32px;
+            top: 11px;
+        }
+
+        #team-ani {
+            cursor: pointer;
+            transition: all 0.4s ease;
+        }
+
+        #team-ani:hover {
+            box-shadow: 0 2rem 1rem #08d665;
+            transition: 0.2s;
+        }
+
+        #team-card-name {
+            font-size: 27px;
+            position: relative;
+            top: 10px;
+        }
+
+        /* styling certification */
+
+        #certi-card {
+            cursor: pointer;
+            transition: all 0.4s ease;
+        }
+
+        #certi-card:hover {
+            box-shadow: 0 0rem 9rem #08d665;
+            transition: 0.2s;
+        }
+
+        #card-bgcol {
+            background-color: #3b3a3a;
+            color: aliceblue;
+        }
+
+        #h5-underline {
+            margin-bottom: 62px;
+        }
+
+        @media only screen and (min-width:200px) and (max-width:576px) {
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            #h5-underline {
+                position: relative;
+                bottom: 70px;
+            }
+
+            #col-row {
+                width: 100%;
+            }
+
+            .Pskill {
+                width: 250%;
+            }
+
+            #container {
+                position: relative;
+                top: 101%;
+                right: 271px;
+            }
+
+            #langC {
+                position: relative;
+                left: -121px;
+            }
+
+            #Lang-per {
+                position: absolute;
+                left: 555px;
+            }
+
+            #Lang1-per {
+                position: absolute;
+                left: 273px;
+            }
+
+            #Lang-name {
+                position: absolute;
+                left: 2px;
+            }
+
+            #Lang1-name {
+                position: relative;
+                left: 281px;
+            }
+
+            #Langboot {
+                position: relative;
+                left: 24px;
+            }
+
+            #myprogess {
+                width: 369px;
+                position: absolute;
+                left: 52px;
+            }
+
+            #img {
+                position: absolute;
+                right: 115px;
+                bottom: 250px;
+            }
+
+            #about-para {
+                position: relative;
+                bottom: 78px;
+            }
+
+            #cv-btn-read {
+                position: relative;
+                bottom: 100px;
+            }
+
+            #abouttext {
+                position: relative;
+                top: 369px;
+                left: -40px;
+                width: 400px;
+            }
+
+            #services {
+                position: absolute;
+                top: 270%;
+            }
+
+            #skills {
+                position: absolute;
+                top: 410%;
+                left: -15px;
+            }
+
+            #col {
+                position: relative;
+                top: 0px;
+            }
+
+            .skill-h5-underline {
+                position: relative;
+                top: 150px;
+            }
+
+            .cv-btn-read {
+                position: relative;
+                bottom: 300px;
+            }
+
+            .Pskill {
+                position: relative;
+                right: 50px;
+                top: 25px;
+            }
+
+            .col-skill {
+                position: relative;
+                top: 200px;
+            }
+
+            .text-2 {
+                position: relative;
+                right: -19px;
+                font-size: 54px;
+                margin: 0;
+                padding: 0;
+            }
+
+            .text-1 {
+                position: relative;
+                right: -12px;
+            }
+
+            .text-3 {
+                position: relative;
+                right: -37px;
+                top: -15px;
+
+            }
+
+            #ani-name {
+                position: relative;
+                top: -12px;
+                left: -88px;
+                margin: 0;
+                padding: 0;
+                font-size: 72px;
+            }
+
+            #btn {
+                margin: 0;
+                position: relative;
+                left: 168px;
+            }
+
+            #btn1 {
+                margin: 0;
+                position: relative;
+                left: 168px;
+            }
+
+
+            /* team */
+
+            #team {
+                position: relative;
+                top: 2248px;
+            }
+
+            .row {
+                position: relative;
+                left: 63px;
+                gap: 65px;
+                margin-right: 130px;
+            }
+
+        }
+
+        .about-bg-img {
+            background-image: url(image/Header.png);
+            background-repeat: no-repeat;
+        }
+
+        ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            position: relative;
+        }
+
+        ul li a::after {
+            content: '';
+            width: 0%;
+            height: 3px;
+            background: #08d665;
+            position: absolute;
+            left: 10px;
+            bottom: 0px;
+            transition: 0.5s;
+        }
+
+        ul li a:hover::after {
+            width: 80%
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- nav-bar-start -->
+
+    <div style="z-index: 999;" id="mynav">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="image/portfolio-logo.png" alt="Bootstrap" width="90" height="55">
+                </a>
+                <a id="myname" class="navbar-brand" href="#">Portfo<span id="lio">lio.</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <ul id="myul" class="nav justify-content-end">
+
+                    <li class="nav-item">
+                        <a id="myul" class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a id="myul" class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="myul" class="nav-link" href="#services">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="myul" class="nav-link" href="#skills">Skill</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="myul" class="nav-link" href="#team">Team Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="myul" class="nav-link" href="#certification">Certification</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="myul" class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- nav-bar-end -->
+
+    <!-- home-Section-start -->
+
+    <div id="home" style="margin-bottom: 0px; height: 911px;">
+        <div class="home-name fadeInDown animated">
+            <div>
+                <h5 class="text-1">Hello, my name is</h5>
+            </div>
+            <div>
+                <h1 class="text-2">Rushikesh Shinde</h1>
+            </div>
+            <div>
+                <span id="text-3">
+                    <h3 class="text-3">And I'm a
+                </span> <span id="ani-name"> Front-end Developer</span></h3>
+            </div>
+        </div>
+        <a style="color: aliceblue;" class="btn" id="btn" href="#" role="button">Hire me</a>
+
+    </div>
+
+    <div style=" width: 1000px;font-variant: petite-caps; position: absolute; 
+    bottom: 280px;
+    left: 67px;" class="quotes">
+        <h1 style="font-size: 80px; position: absolute;
+                                            top: 170px;"><span style="
+                                        line-height: 90px;" class="imagination">imagination</span> is more important
+            than knowledge</h1>
+    </div>
+
+    <!-- home-section-end -->
+
+    <!-- About Section Start -->
+    <div class="about-bg-img">
+        <div class="about" style="margin-bottom: 0px;  color: #fff; height: 834px;">
+            <div class="container text-center" id="about">
+                <div id="row" class="row">
+                    <div class="col" id="col" style="margin: 20px;">
+                        About me
+                    </div>
+                    <div id="underline">
+                        <h5 id="h5-underline">-------<span id="span-underline">who i am</span>-------</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container text-center">
+                <div id="col-row" class="row row-cols-2">
+                    <div style="position: relative;
+                            bottom: 86px;" class="col"><img id="img" src="image/profile3.JPG" class="img-thumbnail"
+                            alt="..."></div>
+                    <div class="col">
+                        <div id="abouttext">
+                            <div style="text-align: justify;">
+                                <h5 style="position: relative;
+                                        bottom: 87px;
+                                        color: antiquewhite;" id="h5-underline">I'm a Rushikesh And I'm a <span
+                                        id="span-underline">WebDeveloper</span>
+                                    <h5>
+                            </div>
+                            <div style="text-align: justify;">
+                                <p style="position: relative;
+                                        bottom: 145px;
+                                        color: antiquewhite;" id="about-para">
+                                    Hello everyone, My name is Rushikesh Shinde and I am a computer engineer with a
+                                    specialization in WebDeveloping.
+                                    I have been coding for last 3 years and I have a passion for design website. I have
+                                    worked on project for develop
+                                    the website on Shinde Maratha Bhuvan and I am comfortable working with a wide range
+                                    of WebDeveloping including
+                                    HTML, CSS, REACT JS, JAVASCRIPT, NODE JS, MOGNODB. I am an enthsisatic team player
+                                    and I strive to ensure the
+                                    highest quality of Design and Responsive is website produced</p>
+                            </div>
+                            <div>
+                                <button style="position: relative; bottom: 122px;" type="button"
+                                    class="btn float-end downlode-btn" id="cv-btn-load" href="image/facebook.png"
+                                    downlode>Download cv</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About Section end -->
+
+    <!-- services section start -->
+
+    <div class="services" id="services" style="margin-bottom: 0px; height: 700px;">
+        <div class="container text-center">
+            <div id="row" class="row">
+                <div style="color: #fff; position: relative; top: -27px;" class="col" id="col">
+                    My services
+                </div>
+                <div id="underline" style="position: relative;
+                top: -50px;">
+                    <h5 style="color: #fff;position: relative; top:23px" id="h5-underline">-------<span
+                            id="span-underline">what i
+                            provide</span>-------</h5>
+                </div>
+            </div>
+        </div>
+
+        <!-- grid-start -->
+
+        <div class="max-width">
+            <div class="serv-content">
+                <div style="border:3px solid #222" class="card">
+                    <div class="box" style="width:281px; background-color:#222;color: #fff; border-color:#222;">
+                        <img style="height: 72px;
+                            position: relative;
+                            left: 107px;
+                            top: 13px;" src="image/brush.png" alt="" srcset="">
+                        <div class="text">Web Design</div>
+                        <p class="ser-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur delectus
+                            tenetur officiis corporis omnis blanditiis.</p>
+                    </div>
+                </div>
+
+                <div style="border:3px solid #222" class="card">
+                    <div class="box" id="box" style="width:281px; background-color:#222;color: #fff;">
+                        <img style="height: 90px;
+                                    position: relative;
+                                    left: 80px;
+                                    top: 18px;
+                                    width: 132px;" src="image/code.png" alt="" srcset="">
+                        <div class="text">Apps Design</div>
+                        <p class="ser-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur delectus
+                            tenetur officiis corporis omnis blanditiis.</p>
+                    </div>
+                </div>
+                <div style="border:3px solid #222" class="card">
+                    <div class="box" id="box" style="width:281px; background-color:#222;color: #fff;">
+                        <img style="height: 90px;
+                                    position: relative;
+                                    left: 80px;
+                                    top: 18px;
+                                    width: 132px;" src="image/other.png" alt="" srcset="">
+                        <div class="text">Other</div>
+                        <p class="ser-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur delectus
+                            tenetur officiis corporis omnis blanditiis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- grid-end -->
+    </div>
+    <!-- services section end -->
+
+    <!-- skills-section-start -->
+
+    <div id="skills" style="margin-bottom: 0px;">
+        <div class="container text-center" id="skill">
+            <div id="row" class="row">
+                <div class="col col-skill" id="col">
+                    My skills
+                </div>
+                <div id="underline" class="skill-h5-underline">
+                    <h5 id="h5-underline">----<span id="span-underline">what i know</span>-----</h5>
+                </div>
+            </div>
+        </div>
+
+        <!-- grid-start -->
+
+        <div style="margin: auto;" id="skill-row" class="row justify-content-evenly">
+            <div style="position: relative; bottom: 111px;" class="col-4">
+                <div style="text-align: justify;">
+                    <p class="Pskill">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis recusandae
+                        explicabo
+                        architecto, numquam, sunt consequuntur neque, ab obcaecati qui hic reprehenderit rerum
+                        voluptatem accusamus. Tempore, repellendus! Nostrum, ex rem. Nostrum omnis vero unde, odit
+                        possimus repellat veniam? Veniam dolor ipsum assumenda tenetur quis qui, repellat facere,
+                        ipsam vel quia deleniti illum corporis dolorum laudantium impedit inventore nobis ut, animi
+                        earum velit. Nihil facere odio nulla.?</p>
+                </div>
+                <div>
+                    <button type="button" class="btn" id="cv-btn-read" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Read More
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 style="color: #08d665; font-weight: bold;" class="modal-title fs-5"
+                                        id="exampleModalLabel">Skills</h1>
+                                    <button type="button" style="margin: 5px;" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum minima, fugit
+                                        inventore illo, quae perspiciatis saepe nisi recusandae expedita voluptate vel
+                                        exercitationem impedit rem nobis odit est praesentium quo ex! Architecto ut est
+                                        aspernatur, recusandae sequi non ipsam dolores quos perspiciatis eligendi aut!
+                                        Debitis dolores culpa praesentium, in eos dignissimos?</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button style="background-color: #08d665;" type="button" class="btn" id="cv-btn"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <button type="button" class="btn float-end downlode-btn" id="cv-btn" href="image/facebook.png"
+                        downlode>Download cv</button> -->
+                </div>
+                <div class="modal-dialog modal-fullscreen-sm-down">
+
+                </div>
+
+            </div>
+            <div style="margin-top: -33px; position: relative; bottom: 111px;" class="col-4">
+                <!-- <label style="font-weight: bold;">HTML<span style="padding: 30px;" >75%</span></label> -->
+                <div id="container" class="container text-center">
+                    <div style="padding-top: 26px;" class="row justify-content-md-center">
+                        <div id="Lang-name" style=" position: relative;
+                                   right: 177px; 
+                                   font-weight: bold;
+                                   color: antiquewhite;" class="col col-lg-2">
+                            HTML
+                        </div>
+                        <div style=" position: absolute;
+                                   right: 181px;
+                                   font-weight: bold;
+                                   color: antiquewhite;" id="Lang1-per" class="col col-lg-4 text-start">
+                            75%
+                        </div>
+                    </div>
+
+                    <div id="myprogess" style="height: 8px" class="progress" role="progressbar"
+                        aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 75%; padding-top: 2px; background-color: #08d665;">
+                        </div>
+                    </div>
+                </div>
+                <div id="container" class="container text-center">
+                    <div style="padding-top: 26px;" class="row justify-content-md-center">
+                        <div id="Lang-name" style=" position: relative;
+                               right: 177px; 
+                               font-weight: bold;
+                               color: antiquewhite;" class="col col-lg-2">
+                            CSS
+                        </div>
+                        <div class="col-md-auto">
+
+                        </div>
+                        <div id="Lang1-per" style=" position: absolute;
+                               right: 181px;
+                               font-weight: bold;
+                               color: antiquewhite;"" class=" col col-lg-4 text-start">
+                            60%
+                        </div>
+                    </div>
+
+                    <div id="myprogess" style="height: 8px;" class="progress" role="progressbar"
+                        aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 60%; padding-top: 2px; background-color: #08d665;">
+                        </div>
+                    </div>
+                </div>
+                <div id="container" class="container text-center">
+                    <div style="padding-top: 26px;" class="row justify-content-md-center">
+                        <div id="Langboot" style=" position: relative;
+                                   right: 177px; 
+                                   font-weight: bold;
+                                   color: antiquewhite;" class="col col-lg-2">
+                            BOOTSTRAP
+                        </div>
+                        <div class="col-md-auto">
+
+                        </div>
+                        <div id="Lang1-per" style=" position: absolute;
+                                   right: 181px;
+                                   font-weight: bold;
+                                   color: antiquewhite;" class="col col-lg-4 text-start">
+                            40%
+                        </div>
+                    </div>
+
+                    <div id="myprogess" style="height: 8px;" class="progress" role="progressbar"
+                        aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 40%; padding-top: 2px; background-color: #08d665;">
+                        </div>
+                    </div>
+
+                    <div id="container" class="container text-center">
+                        <div style="padding-top: 26px;" class="row justify-content-md-center">
+                            <div id="Lang1-name" style=" position: relative;
+                               right: 177px; 
+                               font-weight: bold;
+                               color: antiquewhite;" class="col col-lg-2">
+                                C/C++
+                            </div>
+                            <div class="col-md-auto">
+
+                            </div>
+                            <div id="Lang-per" style=" position: absolute;
+                               right: 181px;
+                               font-weight: bold;
+                               color:  antiquewhite;" class="col col-lg-4 text-start">
+                                55%
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="myprogess" style="height: 8px;" class="progress" role="progressbar"
+                        aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                        <div id="langC" class="progress-bar"
+                            style="width: 55%; padding-top: 2px; background-color: #08d665;"></div>
+                    </div>
+
+                    <div id="container" class="container text-center">
+                        <div style="padding-top: 26px;" class="row justify-content-md-center">
+                            <div id="Lang1-name" style=" position: relative;
+                           right: 177px; 
+                           font-weight: bold; 
+                           color: antiquewhite;;" class="col col-lg-2">
+                                PYTHON
+                            </div>
+                            <div class="col-md-auto">
+
+                            </div>
+                            <div id="Lang-per" style=" position: absolute;
+                           right: 181px;
+                           font-weight: bold;
+                           color: antiquewhite;;" class="col col-lg-4 text-start">
+                                20%
+                            </div>
+                        </div>
+                    </div>
+                    <div id="myprogess" style="height: 8px;" class="progress" role="progressbar"
+                        aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 20%; padding-top: 2px; background-color: #08d665;">
+                        </div>
+                    </div>
+                </div>
+                <!-- grid-end -->
+            </div>
+        </div>
+    </div>
+    <!-- skills-section-end -->
+
+
+
+    <!-- Team-Project-Section-Start -->
+
+    <div id="team" style="margin-bottom: 70px; height: 738px;">
+        <div class="container text-center" id="skill">
+            <div id="row" class="row">
+                <div class="col" id="col">
+                    My teams
+                </div>
+                <div id="underline">
+                    <h5 id="h5-underline">----<span id="span-underline">who with me</span>-----</h5>
+                </div>
+            </div>
+        </div>
+
+        <!-- cards-start -->
+
+        <div class="container text-center">
+            <div class="row">
+
+                <div class="col">
+                    <div class="card" id="team-ani" style="width: 18rem; background-color: #222;">
+                        <img src="image/person-icon-red-14.png" id="team-img" class="card-img-top"
+                            alt="Rushikesh Photo's">
+                        <div class="card-body">
+                            <h5 id="team-card-name" class="card-title">Rushikesh Shinde</h5>
+                            <h5 style="position: relative; top: 5px;" class="card-title">(Front-end Developer)</h5>
+                        </div>
+                        <div class="card-body">
+                            <p style="color:aliceblue" class="card-text">Some quick example text to build on the card
+                                title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" id="team-ani" style="width: 18rem; background-color: #222;">
+                        <img src="image/person-icon-red-14.png" id="team-img" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 id="team-card-name" class="card-title">Vishal Patil</h5>
+                            <h5 style="position: relative; top: 5px;" class="card-title">(Back-end Developer)</h5>
+                        </div>
+                        <div class="card-body">
+                            <p style="color:aliceblue;" class="card-text">Some quick example text to build on the card
+                                title
+                                and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" id="team-ani" style="width: 18rem; background-color: #222;">
+                        <img src="image/person-icon-red-14.png" id="team-img" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h2 id="team-card-name" class="card-title">Kalpesh Dhangar</h>
+                                <h5 style="position: relative; top: 5px;" class="card-title">(Database)</h5>
+                        </div>
+                        <div class="card-body">
+                            <p style="color:aliceblue;" class="card-text">Some quick example text to build on the card
+                                title
+                                and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" id="team-ani" style="width: 18rem; background-color: #222;">
+                        <img src="image/person-icon-red-14.png" id="team-img" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 id="team-card-name" class="card-title">Mukesh Patil</h5>
+                            <h5 style="position: relative; top: 5px;" class="card-title">(Full-Stack Developer)</h5>
+                        </div>
+                        <div class="card-body">
+                            <p style="color:aliceblue;" class="card-text">Some quick example text to build on the card
+                                title
+                                and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- card-end -->
+
+        <!--Team-Project-Section-End -->
+
+
+        <!-- Certification-section start -->
+
+        <div id="certification" style="margin-bottom: 70px; background-color: #111;">
+            <div class="container text-center" id="skill">
+                <div id="row" class="row">
+                    <div class="col col" id="col" style="color:antiquewhite;font-size: 40px;
+                                                        font-weight: bold;
+                                                        font-family: 'Poppins', sans-serif;
+                                                        margin-top: 198px;">
+                        My Certification
+                    </div>
+                    <div id="underline" class="skill-h5-underline">
+                        <h5 id="h5-underline" style="color:antiquewhite;">--------<span id="span-underline">who did that
+                                course</span>--------</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- grid-start -->
+
+            <div class="container text-center " style="padding-left: 101px;">
+                <div class="row align-items-start" style="padding-top: 0px;">
+                    <div class="col" style="row-gap: 20px;">
+                        <!-- Row 1 -->
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="card-link">Card link</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="card-link">Card link</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="card-link">Card link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row 2 -->
+                <div class="row align-items-start">
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="card-link">Card link</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="card-link">Card link</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="card-link">Card link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Row 3 -->
+                <div class="row align-items-start">
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="card-link">Card link</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="card-link">Card link</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="card-link">Card link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- grid-end -->
+
+        </div>
+
+
+        <!-- Contact Section Start -->
+
+
+        <div id="certification" style="background-color: #111;">
+            <div class="container text-center" id="contact">
+                <div id="row" class="row">
+                    <div class="col col" id="col" style="color:antiquewhite;font-size: 40px;
+                                                        font-weight: bold;
+                                                        font-family: 'Poppins', sans-serif;
+                                                        margin-top: 198px;">
+                        Contact me
+                    </div>
+                    <div id="underline" class="skill-h5-underline">
+                        <h5 id="h5-underline" style="color:antiquewhite;">--------<span id="span-underline">Get in
+                                Touch</span>--------</h5>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="row justify-content-around justify-content-evenly"
+                style="padding-left: 314px; margin-right: 108px;">
+                <div class="col-4" style="width: 548px; position: relative; right: 235px;">
+                    <p style="font-weight: bold;">Get in Touch</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium beatae distinctio suscipit
+                        quae ipsam, quia fuga aspernatur accusantium mollitia et incidunt voluptates nisi eos explicabo,
+                        dolore omnis voluptatem ipsa quidem.</p>
+                    <div class="contact-img">
+                        <img style="padding-top: 30px; width: 42px;" src="image/contact.png" alt="contact">
+                        <span style="font-weight: bold; padding-left: 20px;">Name</span>
+                    </div>
+                    <div style="padding-left: 65px; position: relative; bottom: 22px;
+                    ">Rushikesh Shinde</div>
+
+                    <div class="contact-img">
+                        <img style="padding-top: 30px; width: 42px; top: -14px; position: relative;"
+                            src="image/loc-img.png" alt="Location">
+                        <span style="font-weight: bold; padding-left: 20px;
+                    position: relative;
+                    top: -10px;">Address</span>
+                        <div style="  padding-left: 66px;
+                    position: relative;
+                    bottom: 32px;
+                    ">At post Kusumba</div>
+
+                        <div class="contact-img">
+                            <img style="padding-top: 30px; width: 42px; top: -14px; position: relative;"
+                                src="image/loc-img.png" alt="Location">
+                            <span style="font-weight: bold; padding-left: 20px;
+                                    position: relative;
+                                    top: -10px;">Email</span>
+                            <div style="  padding-left: 66px;
+                                position: relative;
+                                bottom: 32px;">omkumar7828@gmail.com</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <p style="font-weight: bold;">Message Me</p>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <a style="color: aliceblue; width: 193px; position: absolute; right: 236px;" class="btn" id="btn"
+                        href="#" role="button">Send Massage</a>
+                </div>
+            </div>
+            <hr>
+            <div style="background-color: #080808;" class="card text-center">
+                <div class="card-body">
+                    <h5 class="card-title">@rushikeshshinde</h5>
+                    <p class="card-text">Thank you for Visiting</p>
+                    <a style="background-color: #08d665;" href="#" class="btn">Go Top</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Section End -->
+
+        <!-- Certification-section-End -->
+
+        <!-- Optional JavaScript; choose one of the two! -->
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"></script>
+
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
